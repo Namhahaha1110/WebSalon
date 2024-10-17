@@ -1,0 +1,40 @@
+﻿<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #banner {
+        background-image: linear-gradient(rgba(0,0,0,0.5),#009688) url('../../images/banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .logo {
+        width: 140px;
+        position: absolute;
+        top: 4%;
+        left: 10%;
+    }
+</style>
+<!DOCTYPE html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <section id="banner">
+            <img src="~/Resources/Images/logo.png" class="logo" />
+            <div class="banner-text">
+                <h1>Barber Shop</h1>
+                  <p>Styling Your Hair Is Styling Your Life</p>
+            </div>
+        </section>  
+    @RenderBody()
+    </div>
+</body>
+
